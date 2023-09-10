@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        UserServiceImpl userService = new UserServiceImpl();
+        UserDao userService = new UserDaoHibernateImpl();
         userService.createUsersTable();
 
         userService.saveUser("Valeriia", "Laine", (byte) 21);
